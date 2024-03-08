@@ -16,19 +16,19 @@ video_capture = cv2.VideoCapture(0)
 
 # Load a sample picture and learn how to recognize it.
 abhijith_image = face_recognition.load_image_file("abhijith.jpg")
-abhijith_face_encoding = face_recognition.face_encodings(abhijith_image)[0]
+abhijith_face_encoding = face_recognition.face_encodings(abhijith/abhijith_image)[0]
 
 # Load a second sample picture and learn how to recognize it.
 ashbar_image = face_recognition.load_image_file("ashbar.jpg")
-ashbar_face_encoding = face_recognition.face_encodings(ashbar_image)[0]
+ashbar_face_encoding = face_recognition.face_encodings(ashbar/ashbar_image)[0]
 
 # Load a third sample picture and learn how to recognize it.
 rizan_image = face_recognition.load_image_file("rizan.jpg")
-rizan_face_encoding = face_recognition.face_encodings(rizan_image)[0]
+rizan_face_encoding = face_recognition.face_encodings(rizan/rizan_image)[0]
 
 # Load a forth sample picture and learn how to recognize it.
 vamsi_image = face_recognition.load_image_file("vamsi.jpg")
-vamsi_face_encoding = face_recognition.face_encodings(vamsi_image)[0]
+vamsi_face_encoding = face_recognition.face_encodings(vamsi/vamsi_image)[0]
 
 # Create arrays of known face encodings and their names
 known_face_encodings = [
