@@ -16,6 +16,10 @@ ashbar_face_encoding = face_recognition.face_encodings(ashbar_image)[0]
 rizan_image = face_recognition.load_image_file("rizan/rizan.jpg")
 rizan_face_encoding = face_recognition.face_encodings(rizan_image)[0]
 
+# Load a forth sample picture and learn how to recognize it.
+vamsi_image = face_recognition.load_image_file("vamsi.jpg")
+vamsi_face_encoding = face_recognition.face_encodings(vamsi_image)[0]
+
 # Create arrays of known face encodings and their names
 known_face_encodings = [
     abhijith_face_encoding,
@@ -25,7 +29,8 @@ known_face_encodings = [
 known_face_names = [
     "abhijith",
     "ashbar",
-    "rizan"
+    "rizan",
+    "vamsi"
     
 ]
 # Initialize some variables
